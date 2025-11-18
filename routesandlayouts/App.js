@@ -1,13 +1,48 @@
+//import { StatusBar } from 'expo-status-bar';
+//import { StyleSheet, Text, View } from 'react-native';
+
+//export default function App() {
+  //return (
+    //<View style={styles.container}>
+      {/* <Text style={styles.red}>just red</Text>
+      <Text style={styles.bigBlue}>just bigBlue</Text>
+      <Text style={[styles.bigBlue, styles.red]}>bigBlue, then red</Text>
+      <Text style={[styles.red, styles.bigBlue]}>red, then bigBlue</Text>
+      <StatusBar style="auto" /> */}
+       
+    //</View>
+  //);
+//}
+
+//const styles = StyleSheet.create({
+  // container: {
+  //   flex: 1,
+  //   backgroundColor: '#0baff0ff',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  // },
+  //  bigBlue: {
+  //   color: 'blue',
+  //   fontWeight: 'bold',
+  //   fontSize: 30,
+  // },
+  // red: {
+  //   color: 'red',
+  // },
+  
+//});
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.red}>just red</Text>
-      <Text style={styles.bigBlue}>just bigBlue</Text>
-      <Text style={[styles.bigBlue, styles.red]}>bigBlue, then red</Text>
-      <Text style={[styles.red, styles.bigBlue]}>red, then bigBlue</Text>
+      <Image
+        source={{ uri: 'https://tse1.mm.bing.net/th/id/OIP.9FIiKATaQ0tNuMP3kjjKOwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3' }}
+        style={styles.profileImage}
+      />
+      <Text style={styles.name}>jeevitha r h</Text>
+      <Text style={styles.bio}>Passionate developer and butterflly lover. Always learning and building cool stuff!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -16,16 +51,27 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5147dff',
+    backgroundColor: '#0baff0ff',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 20,
   },
-   bigBlue: {
-    color: 'blue',
+  profileImage: {
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    marginBottom: 20,
+  },
+  name: {
+    fontSize: 28,
     fontWeight: 'bold',
-    fontSize: 30,
+    color: 'white',
+    marginBottom: 10,
   },
-  red: {
-    color: 'red',
+  bio: {
+    fontSize: 16,
+    color: '#f0f0f0',
+    textAlign: 'center',
+    paddingHorizontal: 20,
   },
 });
