@@ -41,7 +41,13 @@ export default function App() {
         source={{ uri: 'https://tse1.mm.bing.net/th/id/OIP.9FIiKATaQ0tNuMP3kjjKOwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3' }}
         style={styles.profileImage}
       />
-      <Text style={styles.name}>jeevitha r h</Text>
+      <Button
+       onPress={() => {
+       console.log('You tapped the button!');
+       }}
+       title="Press Me"
+      />
+      <Text style={styles.name}>Jeevitha r h</Text>
       <Text style={styles.bio}>Passionate developer and butterflly lover. Always learning and building cool stuff!</Text>
       <StatusBar style="auto" />
     </View>
@@ -61,6 +67,7 @@ const styles = StyleSheet.create({
     height: 120,
     borderRadius: 60,
     marginBottom: 20,
+    borderWidth: 3,
   },
   name: {
     fontSize: 28,
