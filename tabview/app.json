@@ -3,7 +3,7 @@
     "name": "tabview",
     "slug": "tabview",
     "version": "1.0.0",
-    "scheme": "your-app-scheme",
+    "scheme": "tabview",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
