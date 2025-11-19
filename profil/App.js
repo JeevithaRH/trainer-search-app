@@ -27,12 +27,12 @@ export default function App() {
       
       {/* Profile Image */}
       <Image
-        source={{ uri: 'https://i.pravatar.cc/300' }} // sample profile picture
+        source={{ uri: 'https://i.pinimg.com/originals/0c/d3/6a/0cd36a9443c137fd97eba1691dd49893.jpg' }} // sample profile picture
         style={styles.profileImage}
       />
 
       {/* Name */}
-      <Text style={styles.name}>Shrinidhi 😎</Text>
+      <Text style={styles.name}>jeevitha r h😎</Text>
 
       {/* Bio */}
       <Text style={styles.bio}>
@@ -40,7 +40,7 @@ export default function App() {
       </Text>
 
       {/* Button */}
-      <TouchableOpacity style={styles.button} onPress={() => alert("Edit Profile")}>
+      <TouchableOpacity style={styles.button} onPress={() => alert("Edit your Profile")}>
         <Text style={styles.buttonText}>Edit Profile</Text>
       </TouchableOpacity>
 
