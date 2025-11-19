@@ -19,7 +19,7 @@ export default function RootLayout() {
         }}
       />
       <Tabs.Screen
-        name="projects"
+        name="projects.\index"
         options={{
           title: 'Projects',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="th-large" color={color} />,
