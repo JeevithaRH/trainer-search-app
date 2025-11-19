@@ -12,6 +12,13 @@ export default function RootLayout() {
         }}
       />
       <Tabs.Screen
+        name="profil"
+        options={{
+          title: 'profil',
+          tabBarIcon: ({ color }) => <FontAwesome size={28} name="user" color={color} />,
+        }}
+      />
+      <Tabs.Screen
         name="projects"
         options={{
           title: 'Projects',
